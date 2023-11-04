@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MATLAG</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel='stylesheet' type='text/css' media='screen' href='./style/navbar.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style/hero.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style/cards.css'>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Open+Sans&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            font-family: sans-serif;
+            color: #222;
+            background-color: black;
+        }
+
+        @media (max-width: 700px) {
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .nav .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nav .logo {
+                display: none;
+            }
+        }
+    </style>
+    <header class="header"  id="navbar">
+        <nav>
+            <div class="logo">
+                <a href="index.html">MAT<span>LAG</span></a>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="index.html">Retter</a></li>
+                <li><a href="index.html">Om Oss</a></li>
+                <li><a href="index.html">Kontakt</a></li>
+            </ul>
+        </nav>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function () {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-100px";
+                    // document.getElementById("menu").style.top = "-100";
+                }
+                prevScrollpos = currentScrollPos;
+            }
+        </script>
+    </header>
+    <section>
+        <div class="hero">
+            <div class="container">
+                <h1>Velkommen til MAT<span>LAG</span></h1>
+                <p>Smakfull, sunne og gode retter</p>
+            </div>
+        </div>
+    </section>
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <img src="">
+                <div class="card-content">
+                    <h2 class="card-title">Tacos</h2>
+                    <p class="card-description">
+                        Den første tacoskjellfabrikken i verden ble etablert i Los Angeles, California, i 1951 av et
+                        ektepar ved navn Glen og Margaret Bell. Dette var begynnelsen på den populære trenden med harde
+                        tacoskjell, som senere spredte seg til mange deler av verden.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <img src="">
+                <div class="card-content">
+                    <h2 class="card-title">Tacos</h2>
+                    <p class="card-description">
+                        Den første tacoskjellfabrikken i verden ble etablert i Los Angeles, California, i 1951 av et
+                        ektepar ved navn Glen og Margaret Bell. Dette var begynnelsen på den populære trenden med harde
+                        tacoskjell, som senere spredte seg til mange deler av verden.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
