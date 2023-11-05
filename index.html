@@ -68,15 +68,28 @@
                 på rulleretningen
             */
             var prevScrollpos = window.pageYOffset;
+            var isScrollingUp = false;
+
             window.onscroll = function () {
-                var currentScrollPos = window.pageYOffset; // få scroll posisjon (Y-axis)
-                if (prevScrollpos > currentScrollPos) {
-                    document.getElementById("navbar").style.top = "0";
-                } else {
-                    document.getElementById("navbar").style.top = "-90px";
-                }
-                prevScrollpos = currentScrollPos;
+            var currentScrollPos = window.pageYOffset;
+        
+            if (prevScrollpos > currentScrollPos) {
+                // Scrolling up
+                isScrollingUp = true;
+            } else {
+                // Scrolling down
+                isScrollingUp = false;
             }
+        
+            // Prevent hiding the navbar when the address bar behavior triggers a scroll up
+            if (isScrollingUp && currentScrollPos < 10) {
+                document.getElementById("navbar").style.top = "0";
+            } else if (!isScrollingUp || currentScrollPos < 10) {
+                document.getElementById("navbar").style.top = "-90px";
+            }
+
+            prevScrollpos = currentScrollPos;
+        }
         </script>
     </header>
     <section>
