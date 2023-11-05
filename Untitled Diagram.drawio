@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-05T23:14:37.546Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0" etag="0vkyPGeevWLxRqOhHyox" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-05T23:15:17.350Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0" etag="GtpfPhuOVoyCPpKpxVqy" version="22.0.8" type="github">
   <diagram name="Page-1" id="RXTj_LJkgAL2YhaXDoyc">
-    <mxGraphModel dx="1602" dy="811" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1885" dy="954" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -131,14 +131,14 @@
             <mxPoint y="360" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3xqAiesTPMvwW2uzPzp6-58" value="Card link" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;perimeter=none;whiteSpace=wrap;fillColor=none;strokeColor=none;fontColor=#0085FC;resizeWidth=1;fontSize=14;align=center;" vertex="1" parent="3xqAiesTPMvwW2uzPzp6-52">
+        <mxCell id="3xqAiesTPMvwW2uzPzp6-58" value="PRICE" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;perimeter=none;whiteSpace=wrap;fillColor=none;strokeColor=none;fontColor=#0085FC;resizeWidth=1;fontSize=14;align=center;" vertex="1" parent="3xqAiesTPMvwW2uzPzp6-52">
           <mxGeometry y="1" width="80" height="40" relative="1" as="geometry">
-            <mxPoint x="10" y="-50" as="offset" />
+            <mxPoint x="20" y="-50" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3xqAiesTPMvwW2uzPzp6-59" value="Another link" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;perimeter=none;whiteSpace=wrap;fillColor=none;strokeColor=none;fontColor=#0085FC;resizeWidth=1;fontSize=14;align=center;" vertex="1" parent="3xqAiesTPMvwW2uzPzp6-52">
+        <mxCell id="3xqAiesTPMvwW2uzPzp6-59" value="DETAILS" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;perimeter=none;whiteSpace=wrap;fillColor=none;strokeColor=none;fontColor=#0085FC;resizeWidth=1;fontSize=14;align=center;" vertex="1" parent="3xqAiesTPMvwW2uzPzp6-52">
           <mxGeometry y="1" width="100" height="40" relative="1" as="geometry">
-            <mxPoint x="100" y="-50" as="offset" />
+            <mxPoint x="130" y="-50" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="3xqAiesTPMvwW2uzPzp6-60" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Food Type&lt;/font&gt;" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=none;strokeWidth=1;fillColor=#F8F9FA;fontColor=#000000;whiteSpace=wrap;align=left;verticalAlign=middle;spacingLeft=0;fontStyle=1;fontSize=14;spacing=5;" vertex="1" parent="3xqAiesTPMvwW2uzPzp6-52">
