@@ -9,14 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel='stylesheet' type='text/css' media='screen' href='./style/navbar.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./style/hero.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./style/cards.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./style/recipe.css'>
 </head>
 
 <body>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Open+Sans&display=swap');
-
         * {
             box-sizing: border-box;
             margin: 0;
@@ -26,27 +23,28 @@
         }
 
         body {
+            scroll-behavior: smooth;
             font-family: sans-serif;
-            color: #222;
             background-color: black;
         }
+        * {
+            scrollbar-width: auto;
+            scrollbar-color: #9b9b9b #616161;
+        }
+        *::-webkit-scrollbar {
+            width: 16px;
+        }
+        *::-webkit-scrollbar-track {
+            background: #616161;
+        }
 
-        @media (max-width: 700px) {
-            .hero h1 {
-                font-size: 30px;
-            }
-
-            .nav .container {
-                display: flex;
-                flex-direction: column;
-            }
-
-            .nav .logo {
-                display: none;
-            }
+        *::-webkit-scrollbar-thumb {
+            background-color: #9b9b9b;
+            border-radius: 10px;
+            border: 3px solid #616161;
         }
     </style>
-    <header class="header"  id="navbar">
+    <header class="header" id="navbar">
         <nav>
             <div class="logo">
                 <a href="index.html">MAT<span>LAG</span></a>
@@ -61,14 +59,21 @@
             </ul>
         </nav>
         <script>
+            /* 
+                Denne koden sporer hvordan brukeren ruller siden. 
+                Når du blar opp, avslører den en skjult navigasjonslinje, 
+                og når du blar nedover, skjuler den navigasjonslinjen. 
+                Denne effekten oppnås ved å justere CSS 'top'-egenskapen
+                til navbar-elementet, slik at den vises og forsvinner basert 
+                på rulleretningen
+            */
             var prevScrollpos = window.pageYOffset;
             window.onscroll = function () {
-                var currentScrollPos = window.pageYOffset;
+                var currentScrollPos = window.pageYOffset; // få scroll posisjon (Y-axis)
                 if (prevScrollpos > currentScrollPos) {
                     document.getElementById("navbar").style.top = "0";
                 } else {
-                    document.getElementById("navbar").style.top = "-100px";
-                    // document.getElementById("menu").style.top = "-100";
+                    document.getElementById("navbar").style.top = "-90px";
                 }
                 prevScrollpos = currentScrollPos;
             }
@@ -83,33 +88,39 @@
         </div>
     </section>
     <main>
-        <div class="card-container">
-            <div class="card">
-                <img src="">
-                <div class="card-content">
-                    <h2 class="card-title">Tacos</h2>
-                    <p class="card-description">
-                        Den første tacoskjellfabrikken i verden ble etablert i Los Angeles, California, i 1951 av et
-                        ektepar ved navn Glen og Margaret Bell. Dette var begynnelsen på den populære trenden med harde
-                        tacoskjell, som senere spredte seg til mange deler av verden.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="card">
-                <img src="">
-                <div class="card-content">
-                    <h2 class="card-title">Tacos</h2>
-                    <p class="card-description">
-                        Den første tacoskjellfabrikken i verden ble etablert i Los Angeles, California, i 1951 av et
-                        ektepar ved navn Glen og Margaret Bell. Dette var begynnelsen på den populære trenden med harde
-                        tacoskjell, som senere spredte seg til mange deler av verden.
-                    </p>
+        <div class="r-container">
+            <div class="recipe-container">
+                <div class="recipe">
+                    <!--  -->
+                    <div class="recipe-right">
+                        <div class="recipe-title">
+                            Chilenske Empanadas de Pino
+                        </div>
+                        <div class="recipe-description">
+                            Mange familier har Empanadas de Pino eller chilenske empanadas til lunsj hver søndag i
+                            Chile, og de er midtpunktet for Fiestas Patrias (nasjonaldagsfeiringer). De bringer frem
+                            følelsen av glede og hjemlig atmosfære.
+                        </div>
+                        <div id="firstLink" class="recipe-button recipe-button-white" style="cursor:pointer;">
+                            Les Mer
+                        </div>
+                        <script>
+                            /*
+                                Denne koden tar elementen med id 'firstLink', og ser etter om den blir klikt.
+                                I det den blir klikt, videresendes window til en link
+                            */
+                            document.getElementById('firstLink').addEventListener('click', function () {
+                                window.location.href = 'index.html';
+                            });
+                        </script>
+                    </div>
+                    <!--  -->
+                    <div class="recipe-left">
+                        <img src="https://shorturl.at/fFLV1" alt="Empanadas">
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 </body>
-
 </html>

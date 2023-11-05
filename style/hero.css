@@ -1,5 +1,6 @@
 .hero {
-    background: linear-gradient(rgba(85, 85, 85, 0.5), rgba(85, 85, 85, 0.5)), url("https://www.morningadvertiser.co.uk/var/wrbm_gb_hospitality/storage/images/publications/hospitality/morningadvertiser.co.uk/article/2020/07/07/kitchen-hierarchy-the-different-types-of-chefs-titles-explained/3499534-2-eng-GB/Kitchen-Hierarchy-The-Different-Types-of-Chefs-Titles-Explained.jpg");
+    background: linear-gradient(rgba(85, 85, 85, 0.5), rgba(85, 85, 85, 0.5)),
+        url("https://www.morningadvertiser.co.uk/var/wrbm_gb_hospitality/storage/images/publications/hospitality/morningadvertiser.co.uk/article/2020/07/07/kitchen-hierarchy-the-different-types-of-chefs-titles-explained/3499534-2-eng-GB/Kitchen-Hierarchy-The-Different-Types-of-Chefs-Titles-Explained.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -45,4 +46,10 @@
     line-height: 30px;
     letter-spacing: 1.2px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+    .hero h1 {
+        font-size: 30px;
+    }
 }
